@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+
+    <script src="clock.js"></script>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAll.css">
+</head>
+<body onload="browserInformation(); checkCookie()">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="./AufgabenFirstPage/firstExercises.html">Aufgaben 2/3/8/12<span class="sr-only">(current)</span></a></li>
+                <li><a href="./AufgabenSecondPage/scondExercises.html">Aufgaben 5/7/9</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./signUpPage/signUp.html" id="signUPHead"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center whiteBg">
+    <h1>Verschiedene Aufgaben f&uuml;r HTML/CSS/JAVASCRIPT</h1>
+</div>
+
+<div class="container-fluid text-center abstand">
+    <div class="row">
+        <div class="col-sm-8 col-md-8">
+            <h4> Readme zu den ersten &Uuml;bungen in JS/HTML/CSS<br><br>
+                <small>
+                    Dies ist eine Beispielseite wie die angegebenen &Uuml;bungen auf eine echte Website anwendungen finden können <br>
+                    Alle &Uuml;bungen wurden sorgf&auml;lltig gerledigt und abgegeben. <br>
+                    Als Zusatzaufgabe habe ich die Analoguhr anhand des Frameworks <a href="https://p5js.org">p5.js</a>.
+                </small>
+            </h4>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="text-center"></th>
+                    <th class="text-center">Ort</th>
+                    <th class="text-center">Note</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Aufgaben 2/3/8/12</td>
+                    <td>./AufgabenFirstPage</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Aufgaben 5/7/9</td>
+                    <td>./AufgabeSecondPage</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Aufgabe 1/4/6/10</td>
+                    <td>./signUpPanel</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Aufgabe 11 + Zusatzaufgabe Uhr</td>
+                    <td>clock.js + footer</td>
+                    <td>10</td>
+                </tr>
+                </tbody>
+            </table>
+            <h4>
+                <small>
+                    <br>
+                    F&uuml;r mehr informationen wenden sie sich bitte an den ersteller der Website.<br>
+                    Danke.
+                </small>
+            </h4>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <img src="./images/Code.png" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center abstandMehr">
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <img src="./images/ControlPanel.png" class="img-responsive">
+        </div>
+        <div class="col-sm-8 col-md-8">
+            <br><br>
+            <h4> Aufgaben 2/3/8/12<br><br>
+                <small>
+                    Dies sind Aufgaben die mit dem hinzuf&uuml;gen/entfernen von Style und Content zu tun haben.<br>
+                    Bei Aufgabe zwei muste man das Datum und Uhrzeit anzeigen was mit der Funktion Datum(); gelingt <br>
+                    Bei Aufgabe drei muste man eine Div f&auml;rben anhand eines angegebene Wertes. Mit der Funktion style.backgroundColor wird das gemacht <br>
+                    Bei Aufgabe acht muste man alle Paragraphen hervorheben was mit getElementsByTagName("p") sehr einfach erledigt werden konnt <br>
+                    Bei Aufgabe zw&ouml;lf muste man mit Ajax Kontent nachladen. Dies gelingt so: xhttp.open("GET", "ajax_info.txt", true);
+                </small>
+            </h4>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center abstandMehr">
+    <div class="row">
+        <div class="col-sm-8 col-md-8">
+            <h4> Aufgaben 5/7/9<br><br>
+                <small>
+                    Dies sind Aufgaben die mit funktionalit&auml;t zu tun haben<br>
+                    Bei Aufgabe f&uuml;f muste man einen Taschenrechner hinzuf&uuml;gen. Mein Taschenrechner ist voll reponsiv
+                    und einsetzbar. Es kann aber zu Fehlern kommen da dieser nicht bis ins Detai getestet worden ist.<br>
+                    Bei Aufgabe sieben muste man eine Bilder Diashow machen. Bei meiner kan man entweder auf das Bild als
+                    auch auf den Butten darunter drücken <br>
+                    Bei Aufgabe neun muste man ein neues Tab bzw ein neues Window &ouml;ffnen. Beides &ouml;ffnet bei mir
+                    wieder diese Seite
+                </small>
+            </h4>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <img src="./images/HTML.png" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center abstandMehr">
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <img src="./images/Codeing.png" class="img-responsive">
+        </div>
+        <div class="col-sm-8 col-md-8">
+            <br><br>
+            <h4>Aufgabe 1/4/6/10<br><br>
+                <small>
+                    Bei diesen Aufgaben habe ich eine Sign Up page erstellt<br>
+                    Bei Aufgabe 1 muste man seinen Namen einlesen und die Person dan begr&uuml;ssen. Bei mir wird das mit
+                    Cookies erledeig. Jedes mal wen man auf die Startseite geht und die Cookies gesetzt sind so wird man
+                    begr&uuml;sst.<br>
+                    Bei Aufgabe 4 muste man Radiobuttons und Checkboxes verwenden welche bei mir die Geschlechtsauswahl
+                    und das Akzeptieren der Terms und Conditions sind.<br>
+                    Bei Aufgabe 6 musste man die Daten lokalen validieren welches bei mir auch geschieht.
+                    Bei Aufgabe 10 musste man Cookies verwenden. Genaueres siehe Aufgabe 1.<br><br>
+                    Cookies können zu Problemen führen so sind hier noch zwei Buttons zur Hilfestellung
+                </small>
+            </h4>
+            <button type="button" class="btn btn-default" onclick="getName()">Cookie lesen</button>
+            <button type="button" class="btn btn-default" onclick="deleteCookie()">Cookie l&ouml;schen</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center abstandMehr">
+    <div class="row">
+        <div class="col-sm-8 col-md-8">
+            <h4>Aufgabe 11 + Zusatzaufgabe Uhr<br><br>
+                <small>
+                    Bei Aufgabe 11 musste man Browserversion und Sprache anzeigen lassen. Dies habe ich im Footer
+                    implementiert. Verwendete Funktion: navigator.appVersion & navigator.language<br>
+                    Bei der Zusatzaufgabe Uhr musste man eine Analoge oder Digitale Uhr erstellen. Ich entschied mich
+                    f&uuml;r eine nicht konventionelle Analoge Uhr und verwendete hirf&uuml;r das Framework
+                    <a href="https://p5js.org">p5.js</a> (siehe Link)
+                </small>
+            </h4>
+        </div>
+        <div class="col-sm-3 col-md-3">
+            <img src="./images/MeedAndCode.png" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<footer class="bd-footer text-muted">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-10 order-1">
+                <p id="browser"></p>
+                <p><span class="glyphicon glyphicon-copyright-mark"></span> Gabriel Mitterrutzner </p>
+            </div>
+            <div class="col-md-2 order-2" id="clockDiv"></div>
+        </div>
+    </div>
+</footer>
+
+<!--
+   * Style Guide, Best Practices, Mistakes
+   * Formuale
+   * Dom Intro, Documents
+   * BOM History, Navigator, Timing, Cookies
+   * JavaScript Quiz
+   * References
+
+   Vorgaben für Übung:
+   - Name einlesen und mit diesem begrüßen
+   - Aktuelle Uhrzeit und Zeit auf Seite anzeigen
+   - Hintergrundfarbe(oder eines Divs) soll einstellbar sein
+   - RadioButtons und Checkboxen einbauen
+   + Taschenrechner soll vorhanden sein
+   - Alle Eingabewerte lokal validieren
+   - Diashow -> Bild verändern, sobald ein Knopf gedrückt wird oder ich mit Mouse darüber fahre
+   - Alle Paragraphen sollen auf Knopfdruck hervorgehoben werden
+   - Neues Fenster/Neuen Tab öffnen
+   - Cookies verwenden
+   - Browserversion und verwendete Sprache ausgeben
+   - Laden von Inhalten mit AJAX
+   * Gesamte Seite soll ansprechend aussehen (Layout mit HTML und CSS umgesetzt, evtl. Verwendung eines Frameworks (Bootstrap, JQuery,...))
+
+
+   * Zusatzaufgabe1: Programmierung des Spiels Memory
+   * Zusatzaufgabe2: Programmierung einer Analoguhr oder Digitaluhr
+   -->
+
+</body>
+</html>
